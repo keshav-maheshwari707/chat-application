@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Chat</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h2>Chat with Friend</h2>
+    <div id="chatBox" class="chat-box"></div>
+    <input type="text" id="messageInput" placeholder="Type a message..." />
+    <button onclick="sendMessage()">Send</button>
+    <br />
+    <button onclick="logout()">Logout</button>
+  </div>
+
+  <script src="https://www.gstatic.com/firebasejs/10.8.1/firebase-app-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/10.8.1/firebase-auth-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/10.8.1/firebase-firestore-compat.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
